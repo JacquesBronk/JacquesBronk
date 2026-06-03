@@ -2,7 +2,7 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="terminal: jacques@homelab — Principal Engineer @ Agile Bridge. .NET by day, Kubernetes always, teaching AI agents to behave by night." src="assets/header-light.svg" width="820">
+  <img alt="terminal: jacques@agilebridge — Principal Engineer @ Agile Bridge. .NET by day, Kubernetes always, teaching AI agents to behave by night." src="assets/header-light.svg" width="820">
 </picture>
 
 ### `$ ls ~/projects`

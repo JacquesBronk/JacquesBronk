@@ -5,18 +5,18 @@
   <circle cx="26" cy="26" r="6.5" fill="#ff5f56"/>
   <circle cx="48" cy="26" r="6.5" fill="#ffbd2e"/>
   <circle cx="70" cy="26" r="6.5" fill="#27c93f"/>
-  <text x="92" y="31" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,monospace" font-size="12" fill="#484f58">jacques@homelab — bash</text>
+  <text x="92" y="31" font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,monospace" font-size="12" fill="#484f58">jacques@agilebridge — bash</text>
   <line x1="1" y1="44" x2="819" y2="44" stroke="#30363d" stroke-width="1"/>
   <!-- session -->
   <g font-family="ui-monospace,'Cascadia Code','SF Mono',Consolas,monospace" font-size="15">
-    <text x="24" y="76"><tspan fill="#3fb950">jacques@homelab</tspan><tspan fill="#8b949e">:~$</tspan><tspan fill="#e6edf3"> whoami</tspan></text>
+    <text x="24" y="76"><tspan fill="#3fb950">jacques@agilebridge</tspan><tspan fill="#8b949e">:~$</tspan><tspan fill="#e6edf3"> whoami</tspan></text>
     <text x="24" y="100" fill="#e6edf3">Jacques Bronkhorst — Principal Engineer @ Agile Bridge</text>
-    <text x="24" y="132"><tspan fill="#3fb950">jacques@homelab</tspan><tspan fill="#8b949e">:~$</tspan><tspan fill="#e6edf3"> cat /etc/motd</tspan></text>
+    <text x="24" y="132"><tspan fill="#3fb950">jacques@agilebridge</tspan><tspan fill="#8b949e">:~$</tspan><tspan fill="#e6edf3"> cat /etc/motd</tspan></text>
     <text x="24" y="156" fill="#8b949e">.NET by day · Kubernetes always · teaching AI agents to behave by night</text>
-    <text x="24" y="188"><tspan fill="#3fb950">jacques@homelab</tspan><tspan fill="#8b949e">:~$</tspan></text>
+    <text x="24" y="188"><tspan fill="#3fb950">jacques@agilebridge</tspan><tspan fill="#8b949e">:~$</tspan></text>
   </g>
   <!-- blinking cursor -->
-  <rect x="218" y="176" width="9" height="16" fill="#3fb950">
+  <rect x="261" y="176" width="9" height="16" fill="#3fb950">
     <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
