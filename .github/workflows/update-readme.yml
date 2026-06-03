@@ -6,6 +6,9 @@ on:
   push:
     branches: [main]
     paths: ["data/**", "templates/**", "scripts/**", "assets/**"]
+  workflow_run:
+    workflows: ["Arcade rotation"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +22,8 @@ jobs:
 
       - name: Render README
         run: python3 scripts/render.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit if changed
         run: |

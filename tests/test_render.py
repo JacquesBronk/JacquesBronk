@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-from render import SAST, render, render_lab_table  # noqa: E402
+from render import SAST, render, render_arcade_section, render_lab_table  # noqa: E402
 
 NOW = datetime(2026, 6, 3, 16, 0, tzinfo=SAST)
 
@@ -19,7 +19,7 @@ FRESH = {
 STALE = {**FRESH, "updated_at": "2026-06-01T15:30:00+02:00"}
 NUGET = {"version": "2027.1.1", "totalDownloads": 1115}
 TEMPLATE = ("{{NUGET_DOWNLOADS}}|{{NUGET_VERSION}}|{{LAB_TABLE}}|"
-            "{{LAST_SYNC}}|{{LAB_QUIP}}")
+            "{{LAST_SYNC}}|{{LAB_QUIP}}|{{ARCADE_SECTION}}")
 
 
 class TestLabTable(unittest.TestCase):
@@ -41,6 +41,24 @@ class TestLabTable(unittest.TestCase):
         table, last_sync, quip = render_lab_table(None, NOW)
         self.assertIn("Unknown", table)
         self.assertEqual(last_sync, "never")
+
+
+class TestArcade(unittest.TestCase):
+    def test_each_game_detected(self):
+        cases = {
+            "github-snake.svg": "./snake",
+            "commit-invaders.svg": "./invaders",
+            "pacman-contribution-graph.svg": "./pacman",
+            "breakout-contribution-graph.svg": "./breakout",
+        }
+        for marker, cmd in cases.items():
+            section = render_arcade_section([marker, "other.txt"])
+            self.assertIn(cmd, section)
+            self.assertIn("prefers-color-scheme: dark", section)
+
+    def test_no_game_or_api_failure_renders_offline(self):
+        for files in (None, [], ["unrelated.svg"]):
+            self.assertIn("insert coin", render_arcade_section(files))
 
 
 class TestRender(unittest.TestCase):

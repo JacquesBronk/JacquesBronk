@@ -53,8 +53,10 @@ claude-tokens   Burning   2.47B year-to-date 🔥
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg">
-  <img alt="Space Invaders playing across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg" width="100%">
+  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg" width="100%">
 </picture>
+
+<sub>↻ a different arcade game takes the marquee most nights — snake, invaders, pacman, or breakout. The machine decides.</sub>
 
 ### `$ history | tail -1`
 

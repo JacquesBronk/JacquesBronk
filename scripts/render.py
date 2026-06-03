@@ -4,6 +4,7 @@
 Stdlib only. Run from repo root: python3 scripts/render.py
 """
 import json
+import os
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -22,6 +23,25 @@ NUGET_API = "https://azuresearch-usnc.nuget.org/query?q=packageid:{}"
 
 QUIP_FRESH = "if this is stale, the lab is probably on fire"
 QUIP_STALE = "it's stale. the lab might actually be on fire"
+
+RAW = "https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output"
+# marker filename on the output branch -> (header command, dark svg, light svg)
+ARCADE_GAMES = {
+    "github-snake.svg": (
+        "$ ./snake --feed=commits",
+        "github-snake.svg", "github-snake-light.svg"),
+    "commit-invaders.svg": (
+        "$ ./invaders --source=contributions",
+        "commit-invaders-dark.svg", "commit-invaders.svg"),
+    "pacman-contribution-graph.svg": (
+        "$ ./pacman --maze=contributions",
+        "pacman-contribution-graph-dark.svg", "pacman-contribution-graph.svg"),
+    "breakout-contribution-graph.svg": (
+        "$ ./breakout --bricks=commits",
+        "breakout-contribution-graph-dark.svg", "breakout-contribution-graph.svg"),
+}
+ARCADE_OFFLINE = ("### `$ ./arcade`\n\n"
+                  "```text\ninsert coin — machine rebooting, check back tomorrow\n```")
 
 
 def load_lab_status(path=LAB_STATUS):
@@ -81,7 +101,34 @@ def fetch_nuget(package=NUGET_PACKAGE, cache_path=NUGET_CACHE):
         return cache[package]
 
 
-def render(template_text, lab_status, nuget, now):
+def list_output_branch():
+    """Return filenames on the output branch, or None on failure."""
+    url = "https://api.github.com/repos/JacquesBronk/JacquesBronk/contents/?ref=output"
+    headers = {"User-Agent": "profile-render"}
+    if os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return [f["name"] for f in json.load(resp)]
+    except Exception:
+        return None
+
+
+def render_arcade_section(filenames):
+    """Render the arcade section for whichever game is on the output branch."""
+    for marker, (header, dark, light) in ARCADE_GAMES.items():
+        if filenames and marker in filenames:
+            return (f"### `{header}`\n\n"
+                    "<picture>\n"
+                    f'  <source media="(prefers-color-scheme: dark)" srcset="{RAW}/{dark}">\n'
+                    f'  <source media="(prefers-color-scheme: light)" srcset="{RAW}/{light}">\n'
+                    f'  <img alt="arcade game played across the contribution graph" src="{RAW}/{light}" width="100%">\n'
+                    "</picture>")
+    return ARCADE_OFFLINE
+
+
+def render(template_text, lab_status, nuget, now, arcade_files=None):
     """Substitute all template placeholders; return README text."""
     table, last_sync, quip = render_lab_table(lab_status, now)
     return (template_text
@@ -89,12 +136,14 @@ def render(template_text, lab_status, nuget, now):
             .replace("{{NUGET_VERSION}}", nuget["version"])
             .replace("{{LAB_TABLE}}", table)
             .replace("{{LAST_SYNC}}", last_sync)
-            .replace("{{LAB_QUIP}}", quip))
+            .replace("{{LAB_QUIP}}", quip)
+            .replace("{{ARCADE_SECTION}}", render_arcade_section(arcade_files)))
 
 
 def main():
     now = datetime.now(SAST)
-    readme = render(TEMPLATE.read_text(), load_lab_status(), fetch_nuget(), now)
+    readme = render(TEMPLATE.read_text(), load_lab_status(), fetch_nuget(), now,
+                    arcade_files=list_output_branch())
     README.write_text(readme)
     print(f"README.md rendered ({len(readme)} bytes)")
     return 0
