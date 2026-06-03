@@ -1,0 +1,33 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "17 */6 * * *" # every 6h, offset to avoid top-of-hour congestion
+  push:
+    branches: [main]
+    paths: ["data/**", "templates/**", "scripts/**", "assets/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Render README
+        run: python3 scripts/render.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet README.md data/nuget-cache.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md data/nuget-cache.json
+          git commit -m "chore: re-render README"
+          git push

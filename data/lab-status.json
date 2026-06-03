@@ -1,0 +1,10 @@
+{
+  "updated_at": "2026-06-03T15:30:00+02:00",
+  "rows": [
+    { "component": "k3s-cluster", "status": "Ready", "detail": "12 namespaces, 2 nodes" },
+    { "component": "nvr-inference", "status": "Ready", "detail": "8 cameras · ~14ms on Hailo-8" },
+    { "component": "edge-llm", "status": "Ready", "detail": "qwen2.5 on Hailo-10H NPU" },
+    { "component": "solar", "status": "Ready", "detail": "48 kWh storage, off-grid POC" },
+    { "component": "claude-tokens", "status": "Burning", "detail": "2.47B year-to-date 🔥" }
+  ]
+}
