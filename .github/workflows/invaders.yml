@@ -1,0 +1,21 @@
+name: Generate commit invaders
+
+on:
+  schedule:
+    - cron: "43 2 * * *" # nightly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  invaders:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate invaders SVGs
+        uses: Goblinlordx/commit-invaders@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user_name: ${{ github.repository_owner }}
