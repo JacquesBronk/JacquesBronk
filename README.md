@@ -48,11 +48,12 @@ claude-tokens   Burning   2.47B year-to-date 🔥
 
 <img src="https://skillicons.dev/icons?i=cs,dotnet,kubernetes,docker,postgres,redis,grafana,prometheus,ts,svelte,py,raspberrypi" alt="C#, .NET, Kubernetes, Docker, Postgres, Redis, Grafana, Prometheus, TypeScript, Svelte, Python, Raspberry Pi" height="44">
 
-### `$ top`
+### `$ ./invaders --source=contributions`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake.svg">
-  <img alt="contribution graph snake animation" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg">
+  <img alt="Space Invaders playing across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg" width="100%">
 </picture>
 
 ### `$ history | tail -1`
