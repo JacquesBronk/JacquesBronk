@@ -21,8 +21,8 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <b>🐳 <a href="https://github.com/JacquesBronk/docker-101">docker-101</a></b><br>
-      A guide to containerization — from your first image to orchestrating systems.
+      <b>🖥️ <a href="https://github.com/JacquesBronk/turing-smart-screen-python">turing-smart-screen-python</a></b><br>
+      Fork with a YAML-driven page-carousel platform for Turing/TURZX smart screens — animated netmap, Prometheus-fed host pages, diff-push rendering.
     </td>
     <td width="50%" valign="top">
       <b>🔒 the-bureau</b> <sub>— escaping the lab soon</sub><br>
