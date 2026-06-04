@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T20:07:07+02:00",
+  "updated_at": "2026-06-04T21:01:50+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -7,19 +7,19 @@
       "detail": "18 namespaces, 3 nodes"
     },
     {
-      "component": "nvr-inference",
+      "component": "hailo8-vlm-detections",
       "status": "Ready",
-      "detail": "8 cameras · ~14ms on Hailo-8"
+      "detail": "958 detections yesterday"
     },
     {
-      "component": "edge-llm",
+      "component": "homelab-updates",
       "status": "Ready",
-      "detail": "qwen2.5 on Hailo-10H NPU"
+      "detail": "4 commits yesterday"
     },
     {
-      "component": "solar",
+      "component": "home-automation",
       "status": "Ready",
-      "detail": "48 kWh storage, off-grid POC"
+      "detail": "1,732 triggers yesterday"
     },
     {
       "component": "claude-tokens",

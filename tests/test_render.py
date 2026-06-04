@@ -25,14 +25,14 @@ TEMPLATE = ("{{NUGET_DOWNLOADS}}|{{NUGET_VERSION}}|{{LAB_TABLE}}|"
 class TestLabTable(unittest.TestCase):
     def test_fresh_status_renders_rows(self):
         table, last_sync, quip = render_lab_table(FRESH, NOW)
-        self.assertIn("k3s-cluster     Ready     12 namespaces, 2 nodes", table)
-        self.assertIn("claude-tokens   Burning   2.47B year-to-date 🔥", table)
+        self.assertIn("k3s-cluster             Ready     12 namespaces, 2 nodes", table)
+        self.assertIn("claude-tokens           Burning   2.47B year-to-date 🔥", table)
         self.assertEqual(last_sync, "2026-06-03 15:30 SAST")
         self.assertIn("probably on fire", quip)
 
     def test_stale_status_shows_unknown_keeps_sync(self):
         table, last_sync, quip = render_lab_table(STALE, NOW)
-        self.assertIn("k3s-cluster     Unknown", table)
+        self.assertIn("k3s-cluster             Unknown", table)
         self.assertNotIn("Ready", table)
         self.assertEqual(last_sync, "2026-06-01 15:30 SAST")
         self.assertIn("actually be on fire", quip)

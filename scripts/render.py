@@ -71,10 +71,10 @@ def render_lab_table(status, now):
                 "homelab         Unknown   no status received yet"), "never", QUIP_STALE
 
     stale = is_stale(status.get("updated_at"), now)
-    lines = [f"{'COMPONENT':<16}{'STATUS':<10}DETAIL"]
+    lines = [f"{'COMPONENT':<24}{'STATUS':<10}DETAIL"]
     for row in status.get("rows", []):
         stat = "Unknown" if stale else row["status"]
-        lines.append(f"{row['component']:<16}{stat:<10}{row['detail']}")
+        lines.append(f"{row['component']:<24}{stat:<10}{row['detail']}")
 
     try:
         ts = datetime.fromisoformat(status["updated_at"]).astimezone(SAST)
