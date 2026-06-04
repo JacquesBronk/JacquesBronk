@@ -42,18 +42,18 @@ solar           Ready     48 kWh storage, off-grid POC
 claude-tokens   Burning   2.47B year-to-date 🔥
 ```
 
-<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-06-03 23:12 SAST · if this is stale, the lab is probably on fire</sub>
+<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-06-04 08:07 SAST · if this is stale, the lab is probably on fire</sub>
 
 ### `$ which --all skills`
 
 <img src="https://skillicons.dev/icons?i=cs,dotnet,kubernetes,docker,postgres,redis,grafana,prometheus,ts,svelte,py,raspberrypi" alt="C#, .NET, Kubernetes, Docker, Postgres, Redis, Grafana, Prometheus, TypeScript, Svelte, Python, Raspberry Pi" height="44">
 
-### `$ ./breakout --bricks=commits`
+### `$ ./snake --feed=commits`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph.svg">
-  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake-light.svg">
+  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake-light.svg" width="100%">
 </picture>
 
 <sub>↻ a different arcade game takes the marquee most nights — snake, invaders, pacman, or breakout. The machine decides.</sub>
