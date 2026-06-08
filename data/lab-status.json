@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-06-08T08:07:07+02:00",
+  "updated_at": "2026-06-08T14:07:07+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
       "status": "Ready",
-      "detail": "19 namespaces, 3 nodes"
+      "detail": "19 namespaces, 2 nodes"
     },
     {
       "component": "hailo8-vlm-detections",
@@ -24,7 +24,7 @@
     {
       "component": "claude-tokens",
       "status": "Burning",
-      "detail": "2.72B year-to-date 🔥"
+      "detail": "2.75B year-to-date 🔥"
     }
   ]
 }
