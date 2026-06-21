@@ -12,7 +12,7 @@
     <td width="50%" valign="top">
       <b>📦 <a href="https://github.com/JacquesBronk/SARS.TaxCalculator">SARS.TaxCalculator</a></b><br>
       South African PAYE/UIF/SDL/ETI tax engine as a NuGet package. Tax years 2023–2027.<br>
-      <sub>↻ 1,124 downloads · v2027.1.1</sub>
+      <sub>↻ 1,125 downloads · v2027.1.1</sub>
     </td>
     <td width="50%" valign="top">
       <b>📦 <a href="https://github.com/JacquesBronk/another-json-lib">another-json-lib</a></b><br>
@@ -37,12 +37,12 @@
 COMPONENT               STATUS    DETAIL
 k3s-cluster             Ready     24 namespaces, 2 nodes
 hailo8-vlm-detections   Ready     461 detections yesterday
-homelab-updates         Ready     126 commits yesterday
+homelab-updates         Ready     131 commits yesterday
 home-automation         Ready     842 triggers yesterday
-claude-tokens           Burning   2.89B year-to-date 🔥
+claude-tokens           Burning   3.06B year-to-date 🔥
 ```
 
-<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-06-21 08:07 SAST · if this is stale, the lab is probably on fire</sub>
+<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-06-21 14:07 SAST · if this is stale, the lab is probably on fire</sub>
 
 ### `$ which --all skills`
 
