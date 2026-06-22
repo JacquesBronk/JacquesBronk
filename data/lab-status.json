@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-22T08:07:07+02:00",
+  "updated_at": "2026-06-22T09:01:09+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -14,7 +14,7 @@
     {
       "component": "homelab-updates",
       "status": "Ready",
-      "detail": "77 commits yesterday"
+      "detail": "80 commits yesterday"
     },
     {
       "component": "home-automation",
@@ -24,7 +24,7 @@
     {
       "component": "claude-tokens",
       "status": "Burning",
-      "detail": "2.75B year-to-date 🔥"
+      "detail": "2.77B year-to-date 🔥"
     }
   ]
 }
