@@ -12,7 +12,7 @@
     <td width="50%" valign="top">
       <b>📦 <a href="https://github.com/JacquesBronk/SARS.TaxCalculator">SARS.TaxCalculator</a></b><br>
       South African PAYE/UIF/SDL/ETI tax engine as a NuGet package. Tax years 2023–2027.<br>
-      <sub>↻ 1,125 downloads · v2027.1.1</sub>
+      <sub>↻ 1,126 downloads · v2027.1.1</sub>
     </td>
     <td width="50%" valign="top">
       <b>📦 <a href="https://github.com/JacquesBronk/another-json-lib">another-json-lib</a></b><br>
@@ -48,12 +48,12 @@ claude-tokens           Burning   10.30B year-to-date 🔥
 
 <img src="https://skillicons.dev/icons?i=cs,dotnet,kubernetes,docker,postgres,redis,grafana,prometheus,ts,svelte,py,raspberrypi" alt="C#, .NET, Kubernetes, Docker, Postgres, Redis, Grafana, Prometheus, TypeScript, Svelte, Python, Raspberry Pi" height="44">
 
-### `$ ./snake --feed=commits`
+### `$ ./invaders --source=contributions`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake-light.svg">
-  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/github-snake-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg">
+  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg" width="100%">
 </picture>
 
 <sub>↻ a different arcade game takes the marquee most nights — snake, invaders, pacman, or breakout. The machine decides.</sub>
