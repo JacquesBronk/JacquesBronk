@@ -25,8 +25,8 @@
       Fork with a YAML-driven page-carousel platform for Turing/TURZX smart screens — animated netmap, Prometheus-fed host pages, diff-push rendering.
     </td>
     <td width="50%" valign="top">
-      <b>🔒 the-bureau</b> <sub>— escaping the lab soon</sub><br>
-      Self-correcting multi-agent orchestration via Redis streams &amp; MCP. DAG task graphs, review-rework loops. Currently in containment.
+      <b>🧠 <a href="https://github.com/JacquesBronk/the-bureau">the-bureau</a></b> <sub>— escaped the lab</sub><br>
+      Self-correcting multi-agent orchestration via Redis streams &amp; MCP. DAG task graphs, structured handoffs, review-rework loops, session resume &amp; zero-CPU event blocking.
     </td>
   </tr>
 </table>
