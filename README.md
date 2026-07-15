@@ -48,12 +48,12 @@ claude-tokens           Burning   2.09B last 7 days 🔥
 
 <img src="https://skillicons.dev/icons?i=cs,dotnet,kubernetes,docker,postgres,redis,grafana,prometheus,ts,svelte,py,raspberrypi" alt="C#, .NET, Kubernetes, Docker, Postgres, Redis, Grafana, Prometheus, TypeScript, Svelte, Python, Raspberry Pi" height="44">
 
-### `$ ./breakout --bricks=commits`
+### `$ ./invaders --source=contributions`
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph.svg">
-  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/breakout-contribution-graph.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg">
+  <img alt="arcade game played across the contribution graph" src="https://raw.githubusercontent.com/JacquesBronk/JacquesBronk/output/commit-invaders.svg" width="100%">
 </picture>
 
 <sub>↻ a different arcade game takes the marquee most nights — snake, invaders, pacman, or breakout. The machine decides.</sub>
