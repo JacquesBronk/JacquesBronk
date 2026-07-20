@@ -42,7 +42,7 @@ home-automation         Ready     799 triggers yesterday
 claude-tokens           Burning   689.5M last 7 days 🔥
 ```
 
-<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-07-20 14:07 SAST · if this is stale, the lab is probably on fire</sub>
+<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-07-20 20:07 SAST · if this is stale, the lab is probably on fire</sub>
 
 ### `$ which --all skills`
 
