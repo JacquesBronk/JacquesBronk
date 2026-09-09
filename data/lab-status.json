@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T02:07:04+02:00",
+  "updated_at": "2026-09-09T08:07:04+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -24,7 +24,7 @@
     {
       "component": "claude-tokens",
       "status": "Burning",
-      "detail": "36.5M last 7 days 🔥"
+      "detail": "36.0M last 7 days 🔥"
     }
   ]
 }
