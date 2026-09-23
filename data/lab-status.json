@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T20:07:04+02:00",
+  "updated_at": "2026-09-23T02:07:04+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -9,7 +9,7 @@
     {
       "component": "hailo8-vlm-detections",
       "status": "Ready",
-      "detail": "320 detections yesterday"
+      "detail": "516 detections yesterday"
     },
     {
       "component": "homelab-updates",
@@ -19,7 +19,7 @@
     {
       "component": "home-automation",
       "status": "Ready",
-      "detail": "817 triggers yesterday"
+      "detail": "3,538 triggers yesterday"
     },
     {
       "component": "claude-tokens",
