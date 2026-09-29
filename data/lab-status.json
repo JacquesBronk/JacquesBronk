@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T08:07:04+02:00",
+  "updated_at": "2026-09-29T14:07:04+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -8,8 +8,8 @@
     },
     {
       "component": "hailo8-vlm-detections",
-      "status": "Ready",
-      "detail": "186 detections yesterday"
+      "status": "Unknown",
+      "detail": "stats unavailable"
     },
     {
       "component": "homelab-updates",
