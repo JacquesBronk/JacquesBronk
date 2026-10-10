@@ -36,13 +36,13 @@
 ```text
 COMPONENT               STATUS    DETAIL
 k3s-cluster             Ready     27 namespaces, 3 nodes
-hailo8-vlm-detections   Ready     185 detections yesterday
+hailo8-vlm-detections   Ready     250 detections yesterday
 homelab-updates         Ready     0 commits yesterday
-home-automation         Ready     880 triggers yesterday
+home-automation         Ready     1,423 triggers yesterday
 claude-tokens           Burning   33.9M last 7 days 🔥
 ```
 
-<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-10-09 20:07 SAST · if this is stale, the lab is probably on fire</sub>
+<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-10-10 02:07 SAST · if this is stale, the lab is probably on fire</sub>
 
 ### `$ which --all skills`
 
