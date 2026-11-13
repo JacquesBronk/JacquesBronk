@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T20:07:03+02:00",
+  "updated_at": "2026-11-13T02:07:05+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -19,7 +19,7 @@
     {
       "component": "home-automation",
       "status": "Ready",
-      "detail": "839 triggers yesterday"
+      "detail": "783 triggers yesterday"
     },
     {
       "component": "claude-tokens",
