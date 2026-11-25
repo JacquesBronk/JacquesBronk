@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-25T14:07:02+02:00",
+  "updated_at": "2026-11-25T20:07:02+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
       "status": "Ready",
-      "detail": "31 namespaces, 3 nodes"
+      "detail": "32 namespaces, 3 nodes"
     },
     {
       "component": "hailo8-vlm-detections",
