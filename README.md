@@ -37,12 +37,12 @@
 COMPONENT               STATUS    DETAIL
 k3s-cluster             Ready     31 namespaces, 3 nodes
 hailo8-vlm-detections   Ready     0 detections yesterday
-homelab-updates         Ready     175 commits yesterday
-home-automation         Ready     835 triggers yesterday
+homelab-updates         Ready     159 commits yesterday
+home-automation         Ready     923 triggers yesterday
 claude-tokens           Burning   0 last 7 days 🔥
 ```
 
-<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-11-24 20:07 SAST · if this is stale, the lab is probably on fire</sub>
+<sub>↻ this section is pushed by a CronJob running in the cluster itself · last sync: 2026-11-25 02:07 SAST · if this is stale, the lab is probably on fire</sub>
 
 ### `$ which --all skills`
 
