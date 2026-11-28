@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T20:07:04+02:00",
+  "updated_at": "2026-11-28T02:07:02+02:00",
   "rows": [
     {
       "component": "k3s-cluster",
@@ -14,12 +14,12 @@
     {
       "component": "homelab-updates",
       "status": "Ready",
-      "detail": "0 commits yesterday"
+      "detail": "1 commits yesterday"
     },
     {
       "component": "home-automation",
       "status": "Ready",
-      "detail": "635 triggers yesterday"
+      "detail": "298 triggers yesterday"
     },
     {
       "component": "claude-tokens",
